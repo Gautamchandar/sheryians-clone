@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jura:wght@300..700&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Playwrite+IN:wght@100..400&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+    font-family: Manrope;
+    src: url(./text-style/manrope.regular.otf);
+}
+
+@font-face {
+    font-family: NeueMachina;
+    src: url(./text-style/NeueMachina-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/bg-body.png);
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 45px;
+}
+
+nav .logo-sheryians img {
+    width: 12vmax;
+    padding: 5px 10px;
+}
+
+nav .list-item ul {
+    display: flex;
+    background-color: rgb(22, 22, 22);
+    border-left-color: white;
+    color: rgb(190, 187, 187);
+    gap: 30px;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-family: Manrope;
+    font-weight: 300;
+}
+
+nav .list-item ul li {
+    list-style: none;
+}
+
+nav .list-item ul li:nth-child(1) {
+    color: white;
+}
+
+nav .list-item ul li:hover {
+    color: rgb(255, 123, 0);
+    transition: 0.5s;
+}
+
+nav .sign-button {
+    color: white;
+    padding: 7px 15px;
+    cursor: pointer;
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
+}
+nav i{
+    display: none;
+}
+nav .sign-button:hover {
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.middle-page {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Manrope;
+}
+
+.middle-page .manrope-para-head {
+    font-family: Manrope;
+    font-size: 20px;
+    text-align: center;
+    color: orangered;
+}
+
+.middle-page .manrope-para {
+    font-family: Manrope;
+    font-size: 25px;
+    text-align: center;
+}
+
+.middle-page .heading-span {
+    padding: 5px;
+    font-size: 61px;
+    font-weight: 400;
+    font-family: NeueMachina;
+}
+
+.middle-page .heading-span span {
+    border: 1px solid white;
+    padding-left: 7px;
+    padding-right: 5px;
+    padding-top: 5px;
+    background-color: rgba(228, 98, 51, 0.23);
+}
+
+.logo-image-person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-size: 400;
+}
+
+.logo-image-person img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: -8px;
+}
+
+.logo-image-person .logo-image-person-para {
+    margin: 5px 10px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.logo-image-person .logo-image-person-para .logo-image-person-span {
+    margin: 5px 8px;
+    color: orangered;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.btn .start-journey {
+    padding: 15px 30px;
+    cursor: pointer;
+    background-color: rgb(207, 79, 32);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#section1 {
+    height: 100%;
+    width: 100%;
+    padding: 10px 80px;
+}
+
+.content-part {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "suscriber-section million-section video-section"
+        "unlock-section unlock-section video-section";
+    padding: 20px 20px;
+    font-family: Manrope;
+    font-weight: 400;
+    gap: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #171412;
+}
+
+.suscriber-section {
+    /* background-color: greenyellow; */
+    border: 2px solid rgb(255, 255, 255);
+    grid-area: suscriber-section;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.suscriber-section #inner-suscriber-section h1 {
+    color: rgba(255, 68, 0, 0.704);
+    font-weight: 400;
+}
+
+.suscriber-section #inner-suscriber-section h1 i {
+    color: red;
+}
+
+.unlock-section {
+    border: 2px solid white;
+    grid-area: unlock-section;
+    border-radius: 20px;
+    font-family: Manrope;
+    background-color: black;
+
+}
+
+.unlock-section h1 span {
+    margin-left: 20px;
+}
+
+.unlock-section h1 span img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: -20px;
+}
+
+.unlock-section h1 span button {
+    padding: 5px 50px;
+    background-color: #0000;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid orangered;
+}
+
+.unlock-section h1 span button i {
+    color: white;
+    font-size: 40px;
+}
+
+.unlock-section .inner-unlock-section {
+    display: flex;
+    padding: 10px 20px;
+
+}
+
+.unlock-section .outside-text-unlock {
+    padding: 10px 20px;
+}
+
+.unlock-section .inner-unlock-section h1 {
+    font-size: 49px;
+    font-weight: 300;
+}
+
+.unlock-section .outside-text-unlock h1 {
+    font-size: 49px;
+    font-weight: 300;
+}
+
+.million-section {
+    border: 2px solid white;
+    grid-area: million-section;
+    border-radius: 20px;
+    background-color: black;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 400;
+    padding: 10px 20px;
+}
+
+.million-section h1 span {
+    color: rgba(255, 68, 0, 0.704);
+    font-weight: 400;
+}
+
+.video-section {
+    border: 2px solid white;
+    grid-area: video-section;
+    border-radius: 20px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#video-inner-section {
+    width: 100%;
+    height: 100%;
+}
+
+.video-section #video-inner-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-section .video-inner-part {
+    position: absolute;
+    font-weight: 300;
+    padding: 10px 15px;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.video-section #touch-btn {
+    color: white;
+    position: absolute;
+    transform: translate(-10%, -40%);
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: #0000;
+    bottom: 1%;
+    left: 6%;
+    font-family: Manrope;
+    font-weight: 200;
+    font-size: 20px;
+    color: orangered;
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.video-section #touch-btn i {
+    color: orangered;
+}
+
+.section2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 10px 50px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section2 .section2-scroller {
+    display: flex;
+    align-items: center;
+    min-width: max-content;
+    padding: 15px 30px;
+    animation: scroll 10s linear infinite;
+}
+
+.section2 .section2-scroller img {
+    width: auto;
+    height: 70px;
+    padding: 0 30px;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.grid-parent {
+    height: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr ;
+    grid-template-areas:
+        "first-row second-col third-col fourth-col"
+        "first-row second-col third-col fourth-col";
+    padding: 12px 30px;
+    gap: 20px;
+    /* position: relative; */
+
+}
+
+.section3 .impact-para span {
+    border: 1px solid orangered;
+    font-family: Manrope;
+    padding: 3px 6px;
+    font-weight: 100;
+}
+
+.section3 h1 {
+    font-family: NeueMachina;
+}
+.grid-parent{
+    position: relative;
+}
+.grid-parent .first-row {
+    grid-area: first-row;
+    border-radius: 20px;
+}
+.grid-parent .first-row img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.grid-parent .first-row i{
+    position:absolute;
+    left: 21%;
+    top: 3%;
+    padding: 12px 12px;
+    border-radius: 50%;
+    background-color: black;
+}
+.grid-parent .first-row  h2 span{
+    border: 1px solid white;
+    background-color: orangered;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 15px;
+    position: absolute;
+    top: 6%;
+    left: 3%;
+    font-family: Manrope;
+    font-weight: 200;
+    font-size: 17px;
+
+}
+.grid-parent .second-col {
+    grid-area: second-col;
+    position: relative;
+    top: 15%;
+}
+.grid-parent .second-col img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.grid-parent .second-col i{
+    position:absolute;
+    left: 82%;
+    top: 3.2%;
+    padding: 12px 12px;
+    border-radius: 50%;
+    background-color: black;
+}
+.grid-parent .third-col {
+    grid-area: third-col;
+}
+.grid-parent .third-col img{
+     object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.grid-parent .third-col i{
+    position:absolute;
+    left: 70%;
+    top: 3.2%;
+    padding: 12px 12px;
+    border-radius: 50%;
+    background-color: black;
+}
+.grid-parent .fourth-col {
+    grid-area: fourth-col;
+    position: relative;
+    top: 15%;
+}
+.grid-parent .fourth-col img{
+     object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.grid-parent .fourth-col i{
+    position:absolute;
+    left: 85%;
+    top: 3.2%;
+    padding: 12px 12px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+
+@media (max-width: 1024px) {
+
+    nav {
+        padding: 20px 25px;
+    }
+
+    nav .logo-sheryians img {
+        width: 18vmax;
+    }
+
+    nav .list-item ul {
+        gap: 18px;
+        padding: 12px 18px;
+    }
+
+    .middle-page {
+        padding: 20px;
+        height: auto;
+    }
+
+    .middle-page .heading-span {
+        font-size: 45px;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .middle-page .manrope-para {
+        font-size: 20px;
+    }
+
+    #section1 {
+        padding: 20px;
+    }
+
+    .content-part {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "suscriber-section million-section"
+            "unlock-section unlock-section"
+            "video-section video-section";
+    }
+
+    .video-section {
+        min-height: 500px;
+    }
+
+    .unlock-section .inner-unlock-section h1,
+    .unlock-section .outside-text-unlock h1 {
+        font-size: 38px;
+    }
+
+    .grid-parent {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "first-row second-col"
+            "third-col fourth-col";
+        height: auto;
+    }
+
+    .grid-parent .second-col,
+    .grid-parent .fourth-col {
+        top: 0;
+    }
+
+    .grid-parent .first-row i,
+    .grid-parent .second-col i,
+    .grid-parent .third-col i,
+    .grid-parent .fourth-col i {
+        left: auto;
+        right: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 18px 20px;
+    }
+
+    nav .logo-sheryians img {
+        width: 140px;
+    }
+
+    nav .list-item ul {
+        display: none;
+    }
+
+    nav .sign-button {
+        display: none;
+    }
+
+    nav i {
+        display: block;
+        font-size: 26px;
+    }
+
+    .middle-page {
+        padding: 20px 15px;
+    }
+
+    .middle-page .heading-span {
+        font-size: 34px;
+    }
+
+    .middle-page .manrope-para {
+        font-size: 17px;
+    }
+
+    .middle-page .manrope-para-head {
+        font-size: 16px;
+    }
+
+    .logo-image-person {
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .btn .start-journey {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+    #section1 {
+        padding: 15px;
+    }
+
+    .content-part {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "suscriber-section"
+            "million-section"
+            "unlock-section"
+            "video-section";
+        padding: 15px;
+    }
+
+    .suscriber-section,
+    .million-section,
+    .unlock-section,
+    .video-section {
+        width: 100%;
+    }
+
+    .unlock-section .inner-unlock-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .unlock-section .inner-unlock-section h1,
+    .unlock-section .outside-text-unlock h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .unlock-section h1 span button {
+        padding: 5px 25px;
+    }
+
+    .unlock-section h1 span button i {
+        font-size: 25px;
+    }
+
+    .video-section {
+        min-height: 350px;
+    }
+
+    .video-section .video-inner-part {
+        font-size: 24px;
+    }
+
+    .video-section #touch-btn {
+        font-size: 14px;
+        left: 8%;
+        bottom: 2%;
+        padding: 10px 14px;
+    }
+
+    .section2 {
+        padding: 10px 20px;
+    }
+
+    .section2 .section2-scroller img {
+        height: 50px;
+        padding: 0 15px;
+    }
+
+    .section3 {
+        padding: 20px 15px;
+    }
+
+    .section3 h1 {
+        font-size: 30px;
+    }
+
+    .grid-parent {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "first-row"
+            "second-col"
+            "third-col"
+            "fourth-col";
+        height: auto;
+        padding: 15px;
+    }
+
+    .grid-parent .first-row,
+    .grid-parent .second-col,
+    .grid-parent .third-col,
+    .grid-parent .fourth-col {
+        top: 0;
+        height: 350px;
+        position: relative;
+    }
+
+    .grid-parent .first-row i,
+    .grid-parent .second-col i,
+    .grid-parent .third-col i,
+    .grid-parent .fourth-col i {
+        right: 5%;
+        left: auto;
+        top: 4%;
+    }
+
+    .grid-parent .first-row h2 span {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .middle-page .heading-span {
+        font-size: 26px;
+    }
+
+    .middle-page .manrope-para {
+        font-size: 15px;
+    }
+
+    .unlock-section .inner-unlock-section h1,
+    .unlock-section .outside-text-unlock h1 {
+        font-size: 22px;
+    }
+
+    .section3 h1 {
+        font-size: 24px;
+    }
+
+    .video-section {
+        min-height: 280px;
+    }
+
+    .video-section #touch-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .btn .start-journey {
+        width: 100%;
+        max-width: 250px;
+    }
+}
